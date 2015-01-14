@@ -1,0 +1,15 @@
+{% if rating and rating.totalVotes %}
+    Rating: {{ entity.rating.value|number_format(2) }}
+    /
+    {{ constant('MAX_VALUE', entity.rating) }}
+    ::
+    {{ entity.rating.totalVotes }}
+    (
+        it's {{ entity.rating.relativeValue|number_format(2) }}em
+        or {{ entity.rating.percentageValue|number_format(0) }}%
+    )
+{% else %}
+    No rating yet. Vote first!
+{% endif %}
+
+{{ form(form) }}
