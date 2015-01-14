@@ -1,5 +1,5 @@
 {
-    "name": "lapalabs/user-profile-bundle",
+    "name": "lapalabs/rating-bundle",
     "description": "Provides star rating management for Symfony",
     "keywords": ["lapalabs", "rating", "voting", "star", "bundle"],
     "homepage": "https://github.com/LapaLabs/RatingBundle",
